@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tarea3"
+    namespace = "com.example.tarea4"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.tarea3"
+        applicationId = "com.example.tarea4"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -39,8 +39,12 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation("dev.inmo:micro_utils.android.recyclerview-android:0.20.6")
-    implementation("com.madgag:android-pinned-header-listviews:0.4")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.6.2")
+    implementation ("androidx.lifecycle:lifecycle-livedata:2.6.2")
+    implementation ("androidx.room:room-runtime:2.5.2")
+    annotationProcessor ("androidx.room:room-compiler:2.5.2")
     implementation ("androidx.recyclerview:recyclerview:1.3.1")
+    implementation("dev.inmo:micro_utils.android.recyclerview-android:0.20.6")
+
 
 }
