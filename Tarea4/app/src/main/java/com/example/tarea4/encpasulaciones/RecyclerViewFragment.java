@@ -1,4 +1,4 @@
-package com.example.tarea4;
+package com.example.tarea4.encpasulaciones;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,9 +9,15 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.tarea4.R;
+import com.example.tarea4.encpasulaciones.Adaptador; // Ajusta la ruta de importación según la ubicación de Adaptador
+
+import com.example.tarea4.entidad.Tarea;
+
 import java.util.ArrayList;
 import java.util.List;
-import com.example.tarea4.;
+
 
 
 public class RecyclerViewFragment extends Fragment {

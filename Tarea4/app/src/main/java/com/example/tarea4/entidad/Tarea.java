@@ -1,4 +1,4 @@
-package com.example.tarea4;
+package com.example.tarea4.entidad;
 
 public class Tarea {
     private String nombre;

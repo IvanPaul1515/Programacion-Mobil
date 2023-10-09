@@ -1,4 +1,4 @@
-package com.example.tarea4;
+package com.example.tarea4.activitys;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -17,6 +17,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.tarea4.R;
+import com.example.tarea4.entidad.Tarea;
+import com.example.tarea4.encpasulaciones.Adaptador; // Ajusta la ruta de importación según la ubicación de Adaptador
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,19 +71,19 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
     }
 
-    private class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
-        private List<Tarea> tareas; // Cambiamos el tipo de datos a Tarea
-
-        public Adaptador(List<Tarea> tareas) {
-            this.tareas = tareas;
-        }
-
-        @NonNull
-        @Override
-        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
-            return new ViewHolder(view);
-        }
+//    public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
+//        private List<Tarea> tareas; // Cambiamos el tipo de datos a Tarea
+//
+//        public Adaptador(List<Tarea> tareas) {
+//            this.tareas = tareas;
+//        }
+//
+//        @NonNull
+//        @Override
+//        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+//            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
+//            return new ViewHolder(view);
+//        }
 
         @Override
         public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
