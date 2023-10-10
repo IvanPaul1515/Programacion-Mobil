@@ -1,6 +1,8 @@
 package com.example.a1erparcial;
 
 import android.os.Bundle;
+import android.util.Log;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,6 +18,7 @@ public class ProductListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d("ProductListActivity", "onCreate: Loading products");
 
         RecyclerView recyclerView = findViewById(R.id.lista);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -27,4 +30,5 @@ public class ProductListActivity extends AppCompatActivity {
             productAdapter.setProducts(products);
         });
     }
+
 }

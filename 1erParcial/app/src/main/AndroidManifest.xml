@@ -13,7 +13,7 @@
         android:theme="@style/Theme._1erParcial"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ProductListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
