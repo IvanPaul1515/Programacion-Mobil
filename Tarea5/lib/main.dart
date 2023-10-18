@@ -75,16 +75,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  displayTexts[currentIndex], // Texto actual
+                  displayTexts[currentIndex],
                   style: TextStyle(fontSize: 24, color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: changeTextAndBackground,
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.red, // Cambia el color del botón a rojo
+                    primary: Colors.red,
                   ),
-                  child: Text("Presione aquí"),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.access_alarm),
+                      Text(" Presione aquí"),
+                    ],
+                  ),
                 ),
               ],
             ),
