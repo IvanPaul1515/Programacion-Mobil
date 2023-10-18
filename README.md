@@ -87,13 +87,13 @@ Crear una aplicación de lista de tareas simple utilizando ViewModel, LiveData y
 # # Tarea 5: Diseño de Interfaz de Usuario Básica en Flutter
 
 
-**Objetivo: **
+**Objetivo:**
 
 Aplicar los conceptos de widgets y diseño de interfaz de usuario aprendidos en la sesión para crear una aplicación simple en Flutter.
 
 **Instrucciones:**
 
-- **Diseño de Interfaz: **
+- **Diseño de Interfaz:**
 Diseña una interfaz de usuario simple que incluya al menos 3 widgets estructurales (por ejemplo, Column, Row, Container) y 4 widgets de diseño (por ejemplo, Text, Image, Button, Icon).
 Personaliza la apariencia de los widgets utilizando propiedades como colores, fuentes, márgenes, etc.
 - **Funcionalidad:**
