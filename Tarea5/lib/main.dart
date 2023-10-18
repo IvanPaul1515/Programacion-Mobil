@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.red,
         title: Text("Primera APP Flutter"),
       ),
       body: Stack(
@@ -80,6 +81,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: changeTextAndBackground,
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.red, // Cambia el color del botón a rojo
+                  ),
                   child: Text("Presione aquí"),
                 ),
               ],
